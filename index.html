@@ -2,21 +2,19 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <!-- อัปเดต Viewport สำหรับ LINE In-App Browser และมือถือที่มีรอยบาก -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, viewport-fit=cover">
+  <title>ระบบบันทึกการบ้าน PNR M.1/10</title>
   
-  <title>ระบบการบ้านนักเรียน</title>
   <style>
+    /* ตั้งค่าให้หน้าเว็บและ Iframe ขยายเต็มจอ 100% ไม่มีขอบขาว */
     html, body {
       margin: 0;
       padding: 0;
-      /* ใช้หน่วย vw และ dvh (Dynamic Viewport Height) เพื่อแก้ปัญหาจอ LINE */
-      width: 100vw; 
-      height: 100dvh; 
-      /* ถ้ามือถือรุ่นเก่ามากไม่รู้จัก dvh ให้ใช้ vh สำรองไว้ */
-      min-height: 100vh; 
-      overflow: hidden; 
-      background-color: #f8f9fa;
+      width: 100vw;
+      height: 100dvh; /* ใช้ dvh เพื่อให้พอดีกับเบราว์เซอร์มือถือเวลาเลื่อนจอ */
+      min-height: 100vh; /* เผื่อมือถือรุ่นเก่า */
+      overflow: hidden; /* ป้องกันแถบเลื่อนซ้อนกัน 2 ชั้น */
+      background-color: #f0fdf4; /* สีพื้นหลังระหว่างรอโหลด */
     }
     
     iframe {
@@ -29,7 +27,6 @@
 </head>
 <body>
 
-  <!-- นำลิงก์ Web App ของ Google มาใส่ที่ src ตรงนี้ครับ -->
   <iframe src="https://script.google.com/a/macros/pranarai.ac.th/s/AKfycbyVptoSdGkjyj6p8Z9iRQ0dBF1FLdIOxacQCP9qAh34I3kOqiDne_eKRTyZQV4_c2Y/exec"></iframe>
 
 </body>
