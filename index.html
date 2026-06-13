@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="th">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  
   <title>ระบบการบ้านนักเรียน</title>
   <style>
-    body, html { margin: 0; padding: 0; height: 100%; overflow: hidden; }
-    iframe { width: 100%; height: 100%; border: none; }
+    /* รีเซ็ตขอบจอให้เป็น 0 และตั้งค่าให้เต็ม 100% พอดี */
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; /* ป้องกันการเกิดแถบ Scrollbar ซ้อนกัน 2 ชั้น */
+      background-color: #f8f9fa; /* สีพื้นหลังตอนโหลด */
+    }
+    
+    /* ตั้งค่า Iframe ให้เต็มหน้าจอแบบเป๊ะๆ */
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+      display: block;
+    }
   </style>
 </head>
 <body>
+
   <iframe src="https://script.google.com/macros/s/AKfycbyVptoSdGkjyj6p8Z9iRQ0dBF1FLdIOxacQCP9qAh34I3kOqiDne_eKRTyZQV4_c2Y/exec"></iframe>
+
 </body>
 </html>
